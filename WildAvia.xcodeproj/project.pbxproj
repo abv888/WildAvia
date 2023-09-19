@@ -19,6 +19,7 @@
 		B79A85962AB9B8E2003E94DE /* FlightsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsListView.swift; sourceTree = "<group>"; };
 		B79A85982AB9B8E3003E94DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B79A859B2AB9B8E3003E94DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B79A85A52AB9BA18003E94DE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +36,7 @@
 		B79A85882AB9B8E2003E94DE = {
 			isa = PBXGroup;
 			children = (
+				B79A85A52AB9BA18003E94DE /* README.md */,
 				B79A85932AB9B8E2003E94DE /* WildAvia */,
 				B79A85922AB9B8E2003E94DE /* Products */,
 			);
