@@ -51,3 +51,11 @@ curl 'https://vmeste.wildberries.ru/stream/api/avia-service/v1/suggests/getCheap
 --data-raw '{"startLocationCode":"LED"}' \
 —compressed
 
+# Screen recordings and shots
+
+https://github.com/abv888/WildAvia/assets/75215739/58c086e7-c90d-4461-96ca-ae9eb0c30e65
+
+
+![IMG_1287](https://github.com/abv888/WildAvia/assets/75215739/78e78b09-359c-45c8-9155-480885b0d70a)
+![IMG_1286](https://github.com/abv888/WildAvia/assets/75215739/7a459703-641b-47b1-aea5-94e14402aace)
+![IMG_1285](https://github.com/abv888/WildAvia/assets/75215739/45e63f15-fee8-402c-bf7c-6a2f745cf34e)
