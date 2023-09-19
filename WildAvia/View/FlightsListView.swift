@@ -8,14 +8,29 @@
 import SwiftUI
 
 struct FlightsListView: View {
+    @StateObject private var viewModel = FlightsListViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            ScrollView(.vertical) {
+                if viewModel.isLoaded {
+                    VStack {
+                        ForEach(viewModel.flights, id: \.searchToken) { flight in
+                            NavigationLink {
+                                FlightsDescriptionView(flight: flight)
+                            } label: {
+                                FlightCell(flight: flight)
+                            }
+                        }
+                    }
+                } else {
+                   ProgressView()
+                        .padding(.top, 250)
+                }
+            }
+            .navigationTitle("Актуальные перелеты")
         }
-        .padding()
+        .accentColor(.black)
     }
 }
 

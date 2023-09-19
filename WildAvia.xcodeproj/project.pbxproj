@@ -11,6 +11,12 @@
 		B79A85972AB9B8E2003E94DE /* FlightsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79A85962AB9B8E2003E94DE /* FlightsListView.swift */; };
 		B79A85992AB9B8E3003E94DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79A85982AB9B8E3003E94DE /* Assets.xcassets */; };
 		B79A859C2AB9B8E3003E94DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79A859B2AB9B8E3003E94DE /* Preview Assets.xcassets */; };
+		B79A85A72AB9BA8A003E94DE /* FlightsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79A85A62AB9BA8A003E94DE /* FlightsListViewModel.swift */; };
+		B79A85AB2AB9BAB2003E94DE /* Flights.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79A85AA2AB9BAB2003E94DE /* Flights.swift */; };
+		B79A85AF2AB9BAF3003E94DE /* FlightsDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79A85AE2AB9BAF3003E94DE /* FlightsDescriptionView.swift */; };
+		B79A85B22AB9BE16003E94DE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79A85B12AB9BE16003E94DE /* NetworkManager.swift */; };
+		B79A85B42AB9D872003E94DE /* FlightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79A85B32AB9D872003E94DE /* FlightCell.swift */; };
+		B79A85B72AB9F5F2003E94DE /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79A85B62AB9F5F2003E94DE /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		B79A85982AB9B8E3003E94DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B79A859B2AB9B8E3003E94DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B79A85A52AB9BA18003E94DE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B79A85A62AB9BA8A003E94DE /* FlightsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsListViewModel.swift; sourceTree = "<group>"; };
+		B79A85AA2AB9BAB2003E94DE /* Flights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flights.swift; sourceTree = "<group>"; };
+		B79A85AE2AB9BAF3003E94DE /* FlightsDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsDescriptionView.swift; sourceTree = "<group>"; };
+		B79A85B12AB9BE16003E94DE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B79A85B32AB9D872003E94DE /* FlightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightCell.swift; sourceTree = "<group>"; };
+		B79A85B62AB9F5F2003E94DE /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,8 @@
 				B79A85A22AB9B989003E94DE /* Model */,
 				B79A85A32AB9B98F003E94DE /* View */,
 				B79A85A42AB9B996003E94DE /* ViewModel */,
+				B79A85B02AB9BDFE003E94DE /* Services */,
+				B79A85B52AB9F5CE003E94DE /* Extensions */,
 				B79A85942AB9B8E2003E94DE /* WildAviaApp.swift */,
 				B79A85982AB9B8E3003E94DE /* Assets.xcassets */,
 				B79A859A2AB9B8E3003E94DE /* Preview Content */,
@@ -74,6 +88,7 @@
 		B79A85A22AB9B989003E94DE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B79A85AA2AB9BAB2003E94DE /* Flights.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -82,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				B79A85962AB9B8E2003E94DE /* FlightsListView.swift */,
+				B79A85AE2AB9BAF3003E94DE /* FlightsDescriptionView.swift */,
+				B79A85B32AB9D872003E94DE /* FlightCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -89,8 +106,25 @@
 		B79A85A42AB9B996003E94DE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B79A85A62AB9BA8A003E94DE /* FlightsListViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B79A85B02AB9BDFE003E94DE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B79A85B12AB9BE16003E94DE /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B79A85B52AB9F5CE003E94DE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B79A85B62AB9F5F2003E94DE /* String+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +198,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B79A85972AB9B8E2003E94DE /* FlightsListView.swift in Sources */,
+				B79A85B42AB9D872003E94DE /* FlightCell.swift in Sources */,
+				B79A85AB2AB9BAB2003E94DE /* Flights.swift in Sources */,
 				B79A85952AB9B8E2003E94DE /* WildAviaApp.swift in Sources */,
+				B79A85AF2AB9BAF3003E94DE /* FlightsDescriptionView.swift in Sources */,
+				B79A85B22AB9BE16003E94DE /* NetworkManager.swift in Sources */,
+				B79A85A72AB9BA8A003E94DE /* FlightsListViewModel.swift in Sources */,
+				B79A85B72AB9F5F2003E94DE /* String+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
