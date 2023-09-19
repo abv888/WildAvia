@@ -11,7 +11,7 @@ import SwiftUI
 struct WildAviaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FlightsListView()
         }
     }
 }
